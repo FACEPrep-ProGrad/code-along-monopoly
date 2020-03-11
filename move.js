@@ -1,4 +1,3 @@
-// create box variables for every boxes in monopoly
 var box1 = document.querySelector('#box1');
 var box2 = document.querySelector('#box2');
 var box3 = document.querySelector('#box3');
@@ -14,7 +13,6 @@ var box5 = document.querySelector('#box5');
 
 
 var d = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
-// add the box to the array so that every box corresponds to the board values
 var arrdiv = [box1, box2, box3, box4, box8, box12, box16, box15, box14, box13, box9, box5];
 
 
@@ -46,7 +44,6 @@ function changeposition1(old, current) {
     var newposition = old + current;
     person1[1] = newposition;
     newposition = newposition % 11;  
-    // Changing the image position
     var img = document.getElementById('img1');
     img.style.visibility = 'hidden';
     console.log(" count" + count);
